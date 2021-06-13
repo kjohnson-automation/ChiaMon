@@ -17,6 +17,7 @@ class Netspace():
         if rsp.status_code == 200:
             return rsp.json()
         else:
+            print(f"Error getting {request_str} data")
             return -1
 
     def get_netspace(self):
